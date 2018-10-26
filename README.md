@@ -1,4 +1,4 @@
-# Games ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+# Games ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)  [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/imtusharsharma)
 This repository consist of codes for games
 
 
