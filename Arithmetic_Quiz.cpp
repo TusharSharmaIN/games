@@ -7,13 +7,29 @@ using namespace std;
 
 int countScore = 0;
 
+/*
+ *  Swap two numbers
+ *  @param &x reference of first number
+ *  @param &y reference of second number
+ *  @return void
+ */
 void swap(int &x, int &y)
 {
-	int temp = x;
-	x = y;
-	y = temp;
+    if(x != y)
+	{   int temp = x;
+	    x = y;
+	    y = temp;
+    }
 }
 
+/*
+ *  Check if the input answer is matched with the result
+ *  @param num1 number one
+ *  @param num2 number two
+ *  @param ans answer from the user
+ *  @param op operator to operate on
+ *  @return true if found ans is correct
+ */
 int isAnsTrue(int num1, int num2, int ans, char op)
 {
 	switch(op)
@@ -32,6 +48,12 @@ int isAnsTrue(int num1, int num2, int ans, char op)
 	
 }
 
+/*
+ *  To Execute a problem specified ten times
+ *  @param operation string for operation
+ *  @param opSymbol char for symbol of operator
+ *  @return void
+ */
 void problem(string operation, char opSymbol = ' ')
 {
 	string correctMsg[] = { {"Correct."}, {"Excellent!"}, {"Very good"}, {"Great Job"} };
@@ -62,9 +84,9 @@ void problem(string operation, char opSymbol = ' ')
 
 		cout<<"\nProblem #"<<i<<": What is "<<num1<<" "<<operation<<" "<<num2<<"? ";
 		cin>>ans;
-			
+
 		if(isAnsTrue(num1, num2, ans, opSymbol))
-		{	
+		{
 			countScore++;
 			cout<<correctMsg[rand()%4];
 		}
@@ -78,6 +100,11 @@ void problem(string operation, char opSymbol = ' ')
 	cout<<"\n\n"<<countScore<<" out of 10 correct.";
 }
 
+/*
+ *  Menu Driven Program
+ *  @param unused
+ *  @return 0 successful count
+ */
 int main()
 {
 	int choice;
@@ -90,7 +117,7 @@ int main()
 	cout<<"\nEnter the number for the problem type: ";
 	cin>>choice;
 
-	system("cls");	
+	system("cls");
 
 	switch(choice)
 	{
