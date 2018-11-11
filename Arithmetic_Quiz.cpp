@@ -121,21 +121,17 @@ int main()
 
 	switch(choice)
 	{
-		case 1	:	
-					problem("plus", '+');
-					break;
+		case 1	:	problem("plus", '+');
+				break;
 		
-		case 2	:
-					problem("minus", '-');
-					break;
+		case 2	:	problem("minus", '-');
+				break;
 
-		case 3	:
-					problem("times", '*');
-					break;
+		case 3	:	problem("times", '*');
+				break;
 		
-		case 4	:
-					problem("mix");
-					break;
+		case 4	:	problem("mix");
+				break;
 	}
 	
 	return 0;
